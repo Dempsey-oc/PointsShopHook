@@ -1,0 +1,9 @@
+name: PointsGUIShop
+version: 1.0
+main: ch.dempsey.shop.Main
+author: Dempsey
+
+commands:
+    shop:
+      usage: /<command>
+      description: point shop gui command
