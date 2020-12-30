@@ -51,7 +51,7 @@ public class FileManager {
 					int slot = config.getInt("slot");
 					String permission = config.getString("permission");
 					
-					ItemStack it = new ItemStack(Material.getMaterial(item), amount);
+					ItemStack it = new ItemStack(Material.getMaterial(item, false), amount);
 					ItemMeta im = it.getItemMeta();
 					im.setCustomModelData(meta);
 					ArrayList<String> lore = new ArrayList<String>();
@@ -99,7 +99,7 @@ public class FileManager {
 		
 		config.set("# Example item configuration for ShopGUI this is what they are supposed to contain or they will not work!", "");
 		save(config, file);
-		config.set("id", Material.COBWEB.toString());
+		config.set("id", Material.OAK_LOG.toString());
 		save(config, file);
 		config.set("amount", 5);
 		save(config, file);

@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 
 import ch.dempsey.shop.gui.GUI;
 
+
 public class Shop implements CommandExecutor{
 
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {

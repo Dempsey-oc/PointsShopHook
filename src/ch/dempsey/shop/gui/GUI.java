@@ -7,8 +7,18 @@ import org.bukkit.inventory.Inventory;
 public class GUI {
 
 	public static void open(Player player) {
+		int size;
 		
-		Inventory inv = Bukkit.createInventory(player, Cache.items.size(), "§6Points Shop");
+		if(Cache.items.size() < 9) {
+			size = 9;
+		}else {
+			size = Cache.items.size();
+		}
+		
+		
+		Inventory inv = Bukkit.createInventory(player, size, "§6Points Shop");
+		
+		
 		
 		for(int i : Cache.items.keySet()) {
 			inv.setItem(i, Cache.items.get(i));
